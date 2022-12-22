@@ -1,5 +1,6 @@
 // ignore_for_file: prefer_const_constructors
 
+import 'package:bookshop/pages/resister.dart';
 import 'package:bookshop/shaired/colors.dart';
 import 'package:bookshop/shaired/text_field.dart';
 import 'package:flutter/material.dart';
@@ -36,7 +37,12 @@ class Login extends StatelessWidget {
                 height: 30,
               ),
               ElevatedButton(
-                onPressed: () {},
+                onPressed: () {
+                  Navigator.pushReplacement(
+    context,
+    MaterialPageRoute(builder: (context) => const Register ()),
+  );
+                },
                 style: ButtonStyle(
                   backgroundColor: MaterialStateProperty.all(BTNbrown),
                   padding: MaterialStateProperty.all(EdgeInsets.all(12)),

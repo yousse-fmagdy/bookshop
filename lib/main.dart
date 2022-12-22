@@ -1,3 +1,4 @@
+import 'package:bookshop/pages/resister.dart';
 import 'package:flutter/material.dart';
 
 import 'pages/Login.dart';
@@ -11,7 +12,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const MaterialApp(
-      home: Login(),
+      home: Register(),
     );
   }
 }
