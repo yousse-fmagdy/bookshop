@@ -1,4 +1,4 @@
-// ignore_for_file: prefer_const_constructors
+// ignore_for_file: prefer_const_constructors, avoid_unnecessary_containers
 
 import 'package:bookshop/shaired/colors.dart';
 import 'package:flutter/material.dart';
@@ -17,17 +17,30 @@ class Home extends StatelessWidget {
           Row(
             children: [
             
-               IconButton(
+               Stack(
+                 children: [
+                  Container(child:
+                   Text("8",    style: TextStyle(color: Color.fromARGB(255, 0, 0, 0)),
+),
+                   padding: EdgeInsets.all(5),
+    decoration: BoxDecoration(
+    color: Color.fromARGB(211, 164, 255, 193),
+    shape: BoxShape.circle)
+                  ),
+
+    IconButton(
  onPressed: () { },
- icon: Icon(Icons.add_shopping_cart)
+ icon: Icon(Icons.add_shopping_cart)),
+ ],
  ),
+
  Padding(
-   padding: const EdgeInsets.all(12.0),
+   padding: const EdgeInsets.only(right: 15),
    child: Text(
     "\$ 128",
      style: TextStyle(fontSize: 16),
     ),
- )
+ ),
  ],
  ),
              
