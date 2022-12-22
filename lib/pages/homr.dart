@@ -3,8 +3,6 @@
 import 'package:bookshop/shaired/colors.dart';
 import 'package:flutter/material.dart';
 
-
-
 class Home extends StatelessWidget {
   const Home({super.key});
 
@@ -16,43 +14,36 @@ class Home extends StatelessWidget {
         actions: [
           Row(
             children: [
-            
-               Stack(
-                 children: [
-                  Container(child:
-                   Text("8",    style: TextStyle(color: Color.fromARGB(255, 0, 0, 0)),
-),
-                   padding: EdgeInsets.all(5),
-    decoration: BoxDecoration(
-    color: Color.fromARGB(211, 164, 255, 193),
-    shape: BoxShape.circle)
-                  ),
-
-    IconButton(
- onPressed: () { },
- icon: Icon(Icons.add_shopping_cart)),
- ],
- ),
-
- Padding(
-   padding: const EdgeInsets.only(right: 15),
-   child: Text(
-    "\$ 128",
-     style: TextStyle(fontSize: 16),
-    ),
- ),
- ],
- ),
-             
+              Stack(
+                children: [
+                  Container(
+                      child: Text(
+                        "8",
+                        style: TextStyle(
+                            fontSize: 16, color: Color.fromARGB(255, 0, 0, 0)),
+                      ),
+                      padding: EdgeInsets.all(5),
+                      decoration: BoxDecoration(
+                          color: Color.fromARGB(211, 164, 255, 193),
+                          shape: BoxShape.circle)),
+                  IconButton(
+                      onPressed: () {}, icon: Icon(Icons.add_shopping_cart)),
+                ],
+              ),
+              Padding(
+                padding: const EdgeInsets.only(right: 15),
+                child: Text(
+                  "\$ 128",
+                  style: TextStyle(fontSize: 16),
+                ),
+              ),
             ],
-          
-        
-        backgroundColor:appbarbrown ,
-        
-        
+          ),
+        ],
+
+        backgroundColor: appbarbrown,
+
         title: Text("Home"),
-
-
       ),
     );
   }
