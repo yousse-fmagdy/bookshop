@@ -27,7 +27,7 @@ class Login extends StatelessWidget {
             Mytextfield(
               textInputTypee: TextInputType.text,
               ispassword: true,
-              hinttexxt: "Please Enter Your Password ",
+              hinttexxt: "Please Enter Your password ",
             ),
           ],
         ),
