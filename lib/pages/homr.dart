@@ -12,8 +12,19 @@ class Home extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        // ignore: prefer_const_literals_to_create_immutables
         actions: [
-          Text("\$ 128")
+          Row(
+            children: [
+               IconButton(
+                onPressed: (){}, 
+              icon : Icon( Icon(Icons.add_shopping_cart)
+                          ),
+              Text("\$ 128",style: TextStyle(fontSize: 18)),
+              ),
+             
+            ],
+          ),
         ],
         backgroundColor:appbarbrown ,
         
