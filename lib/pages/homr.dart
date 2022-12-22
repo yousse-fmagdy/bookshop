@@ -10,7 +10,12 @@ class Home extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       drawer: Drawer(
-        
+        child:Column(
+          children: [
+             UserAccountsDrawerHeader(accountEmail: ,
+              ),
+          ],
+        ) ,
       ),
       appBar: AppBar(
         // ignore: prefer_const_literals_to_create_immutables
