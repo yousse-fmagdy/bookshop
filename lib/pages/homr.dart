@@ -9,6 +9,9 @@ class Home extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      drawer: Drawer(
+        
+      ),
       appBar: AppBar(
         // ignore: prefer_const_literals_to_create_immutables
         actions: [
