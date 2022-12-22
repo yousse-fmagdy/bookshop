@@ -16,16 +16,24 @@ class Home extends StatelessWidget {
         actions: [
           Row(
             children: [
+            
                IconButton(
-                onPressed: (){}, 
-              icon : Icon( Icon(Icons.add_shopping_cart)
-                          ),
-              Text("\$ 128",style: TextStyle(fontSize: 18)),
-              ),
+ onPressed: () { },
+ icon: Icon(Icons.add_shopping_cart)
+ ),
+ Padding(
+   padding: const EdgeInsets.all(12.0),
+   child: Text(
+    "\$ 128",
+     style: TextStyle(fontSize: 16),
+    ),
+ )
+ ],
+ ),
              
             ],
-          ),
-        ],
+          
+        
         backgroundColor:appbarbrown ,
         
         
