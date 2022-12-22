@@ -1,5 +1,6 @@
 // ignore_for_file: prefer_const_constructors
 
+import 'package:bookshop/shaired/text_field.dart';
 import 'package:flutter/material.dart';
 
 class Login extends StatelessWidget {
@@ -15,55 +16,19 @@ class Login extends StatelessWidget {
             SizedBox(
               height: 60,
             ),
-            TextField(
-                keyboardType: TextInputType.emailAddress,
-                obscureText: false,
-                decoration: InputDecoration(
-                  hintText: " please Enter Your e-mail Address : ",
-                  // To delete borders
-                  enabledBorder: OutlineInputBorder(
-                    borderSide: Divider.createBorderSide(context),
-                  ),
-                  focusedBorder: OutlineInputBorder(
-                    borderSide: BorderSide(
-                      color: Color.fromARGB(255, 158, 158, 158),
-                    ),
-                  ),
-                  // fillColor: Colors.red,
-                  filled: true,
-                  contentPadding: const EdgeInsets.all(9),
-                )),
-
-
-SizedBox(
+            Mytextfield(
+              textInputTypee: TextInputType.emailAddress,
+              ispassword: false,
+              hinttexxt: "Please Enter Your e-mail Address",
+            ),
+            SizedBox(
               height: 30,
             ),
-
-
-
-TextField(
-                keyboardType: TextInputType.text,
-                obscureText: true,
-                decoration: InputDecoration(
-                  hintText: " please Enter Your Password : ",
-                  // To delete borders
-                  enabledBorder: OutlineInputBorder(
-                    borderSide: Divider.createBorderSide(context),
-                  ),
-                  focusedBorder: OutlineInputBorder(
-                    borderSide: BorderSide(
-                      color: Color.fromARGB(255, 158, 158, 158),
-                    ),
-                  ),
-                  // fillColor: Colors.red,
-                  filled: true,
-                  contentPadding: const EdgeInsets.all(9),
-                ))
-
-
-
-
-
+            Mytextfield(
+              textInputTypee: TextInputType.text,
+              ispassword: true,
+              hinttexxt: "Please Enter Your Password ",
+            ),
           ],
         ),
       ),
