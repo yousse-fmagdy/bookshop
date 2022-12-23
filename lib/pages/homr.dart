@@ -6,7 +6,9 @@ import 'package:bookshop/shaired/colors.dart';
 import 'package:flutter/material.dart';
 
 class Home extends StatelessWidget {
-  const Home({super.key});
+  
+
+  List items = [];
 
   @override
   Widget build(BuildContext context) {
@@ -33,6 +35,8 @@ class Home extends StatelessWidget {
                         child: ClipRRect(
                             borderRadius: BorderRadius.circular(55),
                             child: Image.asset("assets/image/mecha.jpg")),
+                      ),
+                    ]),
                     footer: GridTileBar(
 // backgroundColor: Color.fromARGB(66, 73, 127, 110),
                       trailing: IconButton(
@@ -43,7 +47,7 @@ class Home extends StatelessWidget {
                       leading: Text("\$12.99"),
 
                       title: Text(
-              "",
+                        "",
                       ),
                     ),
                   ),
