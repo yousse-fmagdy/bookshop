@@ -1,14 +1,35 @@
 // ignore_for_file: prefer_const_constructors, avoid_unnecessary_containers
 
+import 'dart:ffi';
 import 'dart:ui';
 
 import 'package:bookshop/shaired/colors.dart';
 import 'package:flutter/material.dart';
 
-class Home extends StatelessWidget {
-  
+class Item {
+  String imgPath;
+  Double price;
+  Item({required this.imgPath, required this.price});
+}
 
-  List items = [];
+class Home extends StatelessWidget {
+  List items = [
+    Item(imgPath:"path",price:30 LE ),
+        Item(imgPath:"path",price:30 LE ),
+
+    Item(imgPath:"path",price:30 LE ),
+    Item(imgPath:"path",price:30 LE ),
+    Item(imgPath:"path",price:30 LE ),
+    Item(imgPath:"path",price:30 LE ),
+    Item(imgPath:"path",price:30 LE ),
+    Item(imgPath:"path",price:30 LE ),
+    Item(imgPath:"path",price:30 LE ),
+    Item(imgPath:"path",price:30 LE ),
+    Item(imgPath:"path",price:30 LE ),
+    Item(imgPath:"path",price:30 LE ),
+    Item(imgPath:"path",price:30 LE ),
+
+    ];
 
   @override
   Widget build(BuildContext context) {
