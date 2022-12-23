@@ -117,14 +117,14 @@ class Home extends StatelessWidget {
         appBar: AppBar(
           // ignore: prefer_const_literals_to_create_immutables
           actions: [
-            Row(
-              children: [
-                Consumer<Cart>(builder: ((context, classInstancee, child) {
-                  return Stack(
+            Consumer<Cart>(builder: ((context, classInstancee, child) {
+              return Row(
+                children: [
+                  Stack(
                     children: [
                       Container(
                           child: Text(
-                            "${classInstancee.selectedproducts.length   }",
+                            "${classInstancee.Price} ",
                             style: TextStyle(
                                 fontSize: 16,
                                 color: Color.fromARGB(255, 0, 0, 0)),
@@ -137,23 +137,23 @@ class Home extends StatelessWidget {
                           onPressed: () {},
                           icon: Icon(Icons.add_shopping_cart)),
                     ],
-                  );
-                })),
-                Padding(
-                  padding: const EdgeInsets.only(right: 15),
-                  child: Text(
-                    "\$ 128",
-                    style: TextStyle(fontSize: 16),
                   ),
-                ),
-              ],
-            ),
+                  Padding(
+                    padding: const EdgeInsets.only(right: 15),
+                    child: Text(
+                      "\$ 128",
+                      style: TextStyle(fontSize: 16),
+                    ),
+                  ),
+                ],
+              );
+            })),
           ],
 
           backgroundColor: appbarbrown,
 
           title: Consumer<Cart>(builder: ((context, testt, child) {
-            return Text("${testt.my_name}");
+            return Text("Home");
           })),
         ));
   }
