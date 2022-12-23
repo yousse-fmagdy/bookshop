@@ -14,22 +14,9 @@ class Item {
 
 class Home extends StatelessWidget {
   List items = [
-    Item(imgPath:"path",price:30 LE ),
-        Item(imgPath:"path",price:30 LE ),
+    Item(imgPath: "assets\image\1.jpg", price: 80.99),
 
-    Item(imgPath:"path",price:30 LE ),
-    Item(imgPath:"path",price:30 LE ),
-    Item(imgPath:"path",price:30 LE ),
-    Item(imgPath:"path",price:30 LE ),
-    Item(imgPath:"path",price:30 LE ),
-    Item(imgPath:"path",price:30 LE ),
-    Item(imgPath:"path",price:30 LE ),
-    Item(imgPath:"path",price:30 LE ),
-    Item(imgPath:"path",price:30 LE ),
-    Item(imgPath:"path",price:30 LE ),
-    Item(imgPath:"path",price:30 LE ),
-
-    ];
+  ];
 
   @override
   Widget build(BuildContext context) {
@@ -42,7 +29,7 @@ class Home extends StatelessWidget {
                   childAspectRatio: 3 / 2,
                   crossAxisSpacing: 10,
                   mainAxisSpacing: 33),
-              itemCount: 16,
+              itemCount: 12,
               itemBuilder: (BuildContext context, int index) {
                 return GestureDetector(
                   onTap: () {},
