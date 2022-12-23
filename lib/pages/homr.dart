@@ -1,4 +1,4 @@
-// ignore_for_file: prefer_const_constructors, avoid_unnecessary_containers, sort_child_properties_last
+// ignore_for_file: prefer_const_constructors, avoid_unnecessary_containers, sort_child_properties_last, duplicate_ignore
 
 import 'package:bookshop/pages/details.dart';
 import 'package:bookshop/provider/cart.dart';
@@ -47,10 +47,15 @@ class Home extends StatelessWidget {
                     ]),
                     footer: GridTileBar(
 // backgroundColor: Color.fromARGB(66, 73, 127, 110),
-                      trailing: IconButton(
+                      trailing:  Consumer<Cart>(
+  builder: ((context, Cartt, child) {
+  return IconButton(
                           color: Color.fromARGB(255, 141, 122, 16),
-                          onPressed: () {},
-                          icon: Icon(Icons.add)),
+                          onPressed: () {
+                            Cartt.add(product)
+                          },
+                          icon: Icon(Icons.add));
+})),
 
                       leading: Text("\$12.99"),
 
