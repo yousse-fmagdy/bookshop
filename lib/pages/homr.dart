@@ -1,7 +1,6 @@
 // ignore_for_file: prefer_const_constructors, avoid_unnecessary_containers
 
 import 'dart:ffi';
-import 'dart:ui';
 
 import 'package:bookshop/shaired/colors.dart';
 import 'package:flutter/material.dart';
@@ -13,12 +12,17 @@ class Item {
 }
 
 class Home extends StatelessWidget {
-  List items = [
-    Item(imgPath: "assets/image/1.jpg", price: 80.99),
-        Item(imgPath: "assets/image/2.jpg", price: 55.32),
+  final List<Item> items = [
+    Item(imgPath: "assets/image/1.jpg", price: 12.99),
+    Item(imgPath: "assets/image/2.jpg", price: 55.32),
+    Item(imgPath: "assets/image/3.jpg", price: 60.32),
+    Item(imgPath: "assets/image/4.jpg", price: 45.32),
 
 
+    
   ];
+
+  Home({super.key});
 
   @override
   Widget build(BuildContext context) {
