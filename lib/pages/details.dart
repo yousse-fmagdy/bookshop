@@ -58,7 +58,7 @@ class _DetalisState extends State<Detalis> {
         body: SingleChildScrollView(
           child: Column(
             children: [
-              Image.asset("assets/image/2.jpg"),
+              Image.asset(widget.product.imgPath),
               SizedBox(
                 height: 11,
               ),
