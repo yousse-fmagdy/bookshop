@@ -5,7 +5,9 @@ import 'package:flutter/material.dart';
 class Cart with ChangeNotifier {
   List selectedproducts = [
 
+add(){
+  selectedproducts.add(product);
+}
 
-    
   ];
 }
