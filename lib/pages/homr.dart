@@ -25,12 +25,12 @@ class Home extends StatelessWidget {
               itemBuilder: (BuildContext context, int index) {
                 return GestureDetector(
                   onTap: () {
-
-                            Navigator.push(
-          context,
-          MaterialPageRoute(
-            builder: (context) => Detalis(product:   items[index]),
-          ),);
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => Detalis(product: items[index]),
+                      ),
+                    );
                   },
                   child: GridTile(
                     // ignore: sort_child_properties_last
@@ -47,15 +47,15 @@ class Home extends StatelessWidget {
                     ]),
                     footer: GridTileBar(
 // backgroundColor: Color.fromARGB(66, 73, 127, 110),
-                      trailing:  Consumer<Cart>(
-  builder: ((context, Cartt, child) {
-  return IconButton(
-                          color: Color.fromARGB(255, 141, 122, 16),
-                          onPressed: () {
-                            Cartt.add(product)
-                          },
-                          icon: Icon(Icons.add));
-})),
+                      trailing:
+                          Consumer<Cart>(builder: ((context, Cartt, child) {
+                        return IconButton(
+                            color: Color.fromARGB(255, 141, 122, 16),
+                            onPressed: () {
+                              Cartt.add(items[index]);
+                            },
+                            icon: Icon(Icons.add));
+                      })),
 
                       leading: Text("\$12.99"),
 
@@ -119,23 +119,26 @@ class Home extends StatelessWidget {
           actions: [
             Row(
               children: [
-                Stack(
-                  children: [
-                    Container(
-                        child: Text(
-                          "8",
-                          style: TextStyle(
-                              fontSize: 16,
-                              color: Color.fromARGB(255, 0, 0, 0)),
-                        ),
-                        padding: EdgeInsets.all(5),
-                        decoration: BoxDecoration(
-                            color: Color.fromARGB(211, 164, 255, 193),
-                            shape: BoxShape.circle)),
-                    IconButton(
-                        onPressed: () {}, icon: Icon(Icons.add_shopping_cart)),
-                  ],
-                ),
+                Consumer<Cart>(builder: ((context, classInstancee, child) {
+                  return Stack(
+                    children: [
+                      Container(
+                          child: Text(
+                            "${classInstancee.selectedproducts.length   }",
+                            style: TextStyle(
+                                fontSize: 16,
+                                color: Color.fromARGB(255, 0, 0, 0)),
+                          ),
+                          padding: EdgeInsets.all(5),
+                          decoration: BoxDecoration(
+                              color: Color.fromARGB(211, 164, 255, 193),
+                              shape: BoxShape.circle)),
+                      IconButton(
+                          onPressed: () {},
+                          icon: Icon(Icons.add_shopping_cart)),
+                    ],
+                  );
+                })),
                 Padding(
                   padding: const EdgeInsets.only(right: 15),
                   child: Text(
@@ -149,10 +152,9 @@ class Home extends StatelessWidget {
 
           backgroundColor: appbarbrown,
 
-          title: Consumer<Cart>(
-              builder: ((context, testt, child) {
-  return Text("${testt.my_name}");
-})),
+          title: Consumer<Cart>(builder: ((context, testt, child) {
+            return Text("${testt.my_name}");
+          })),
         ));
   }
 }
