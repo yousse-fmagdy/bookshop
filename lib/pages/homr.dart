@@ -10,22 +10,53 @@ class Home extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       drawer: Drawer(
-        child: Column(
-          children: [
-            UserAccountsDrawerHeader(
-              currentAccountPicture: CircleAvatar(
-                radius: 55,
-                backgroundImage: AssetImage("assets/image/back2.jpg"),
-              ),
-              accountEmail: Text("joe@yahoo.com"),
-              accountName: Text("joe magdy",
-                  style: TextStyle(
-                    color: Color.fromARGB(255, 255, 255, 255),
-                  )),
-            ),
-          ],
+ child: Column(
+  children: [
+ mainAxisAlignment: MainAxisAlignment.spaceBetween,
+ 
+  
+ Column(
+ children: [
+ UserAccountsDrawerHeader(
+   ListTile(
+   title: Text("Home"),
+   leading: Icon(Icons.home),
+   onTap: () { }
+ ),
+ decoration: BoxDecoration(
+ image: DecorationImage(
+ image: AssetImage("assets\image\profile.JPG"),
+ fit: BoxFit.cover),
+ ),
+ accountName: Text("youssef magdy",
+ style: TextStyle(
+ color: Color.fromARGB(235, 12, 0, 0),
+ )),
+ accountEmail: Text("joe@gmail.com"),
+ currentAccountPictureSize: Size.square(99),
+ currentAccountPicture: CircleAvatar(
+ radius: 55,
+ backgroundImage: AssetImage("assets\image\back.jpg")),
+ ),
+  
+ 
+   ],
+   ),
+ ),
+     ListTile(
+   title: Text("Home"),
+   leading: Icon(Icons.home),
+   onTap: () { }
+ ),
+  
+
+  
+ ],
+ ),
+
+          
         ),
-      ),
+      
       appBar: AppBar(
         // ignore: prefer_const_literals_to_create_immutables
         actions: [
@@ -62,6 +93,4 @@ class Home extends StatelessWidget {
 
         title: Text("Home"),
       ),
-    );
   }
-}
