@@ -146,7 +146,7 @@ class Home extends StatelessWidget {
 
           title: Consumer<Cart>(
               builder: ((context, testt, child) {
-  return Text("${}");
+  return Text("${testt.my_name}");
 })),
         ));
   }
