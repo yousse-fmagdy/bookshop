@@ -24,7 +24,7 @@ class Home extends StatelessWidget {
     Item(imgPath: "assets/image/9.jpg", price: 66),
     Item(imgPath: "assets/image/10.jpg", price: 90),
     Item(imgPath: "assets/image/11.jpg", price: 60),
-    Item(imgPath: "assets/image/12.jpg", price: 100),
+    Item(imgPath: "assets/image/12.jpg", price: 4),
 
 
 
@@ -47,7 +47,7 @@ class Home extends StatelessWidget {
                   childAspectRatio: 3 / 2,
                   crossAxisSpacing: 10,
                   mainAxisSpacing: 33),
-              itemCount: 12,
+              itemCount: items.length,
               itemBuilder: (BuildContext context, int index) {
                 return GestureDetector(
                   onTap: () {},
@@ -60,7 +60,7 @@ class Home extends StatelessWidget {
                         left: 0,
                         child: ClipRRect(
                             borderRadius: BorderRadius.circular(55),
-                            child: Image.asset("assets/image/mecha.jpg")),
+                            child: Image.asset("items.[index].imgPath")),
                       ),
                     ]),
                     footer: GridTileBar(
