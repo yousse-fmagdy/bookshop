@@ -1,4 +1,4 @@
-// ignore_for_file: prefer_const_constructors, avoid_unnecessary_containers
+// ignore_for_file: prefer_const_constructors, avoid_unnecessary_containers, dead_code
 
 import 'package:bookshop/shaired/colors.dart';
 import 'package:flutter/material.dart';
@@ -64,6 +64,14 @@ class Home extends StatelessWidget {
    title: Text("Logout"),
    leading: Icon(Icons.exit_to_app),
    onTap: () { }
+ ),
+ Container(
+   margin: EdgeInsets.only(bottom: 12),
+   child: Text("Developed by Ali Hassan © 2022",
+ style: TextStyle(fontSize: 16)),
+ )
+   ],
+   ),
  ),
   
  ],
