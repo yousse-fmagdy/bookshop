@@ -4,6 +4,8 @@ import 'package:bookshop/pages/details.dart';
 import 'package:bookshop/pages/homr.dart';
 import 'package:bookshop/pages/resister.dart';
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
+
 
 import 'pages/Login.dart';
 void main() {
