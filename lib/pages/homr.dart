@@ -7,32 +7,27 @@ import 'package:flutter/material.dart';
 
 class Item {
   String imgPath;
-  Int price;
+  int price;
   Item({required this.imgPath, required this.price});
 }
 
 class Home extends StatelessWidget {
-  final List<Item> items = [
-    Item(imgPath: "assets/image/1.jpg", price: 80),
-    Item(imgPath: "assets/image/2.jpg", price: 55),
-    Item(imgPath: "assets/image/3.jpg", price: 60),
-    Item(imgPath: "assets/image/4.jpg", price: 45),
-    Item(imgPath: "assets/image/5.jpg", price: 63),
-    Item(imgPath: "assets/image/6.jpg", price: 52),
-    Item(imgPath: "assets/image/7.jpg", price: 40),
-    Item(imgPath: "assets/image/8.jpg", price: 57),
-    Item(imgPath: "assets/image/9.jpg", price: 66),
-    Item(imgPath: "assets/image/10.jpg", price: 90),
-    Item(imgPath: "assets/image/11.jpg", price: 60),
-    Item(imgPath: "assets/image/12.jpg", price: 4),
+final List<Item> items = [
+    Item(price: 80, imgPath: "assets/image/1.jpg"),
+    Item(price: 90, imgPath: "assets/image/2.jpg"),
+    Item(price: 100, imgPath: "assets/image/3.jpg"),
+    Item(price: 125, imgPath: "assets/image/4.jpg"),
+    Item(price: 60, imgPath: "assets/image/5.jpg"),
+    Item(price: 55, imgPath: "assets/image/6.jpg"),
+    Item(price: 60, imgPath: "assets/image/7.jpg"),
+    Item(price: 45, imgPath: "assets/image/8.jpg"),
+    Item(price: 70, imgPath: "assets/image/9.jpg"),
+    Item(price: 105, imgPath: "assets/image/10.jpg"),
+    Item(price: 30, imgPath: "assets/image/11.jpg"),
+    Item(price: 150, imgPath: "assets/image/12.jpg"),
 
 
-
-
-
-
-
-  ];
+ ];
 
   Home({super.key});
 
