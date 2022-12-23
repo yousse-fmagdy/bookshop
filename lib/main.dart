@@ -1,6 +1,5 @@
 // ignore_for_file: unused_import, prefer_const_constructors
 
-import 'package:bookshop/model/item.dart';
 import 'package:bookshop/pages/details.dart';
 import 'package:bookshop/pages/homr.dart';
 import 'package:bookshop/pages/resister.dart';
@@ -22,8 +21,7 @@ class MyApp extends StatelessWidget {
     return  ChangeNotifierProvider(
         create: (context) {return Cart();},
       child: MaterialApp(
-        home: Detalis(product:   Item(price: 90, imgPath: "assets/image/2.jpg"),
-),
+        home: Home(),
       ),
     );
   }
