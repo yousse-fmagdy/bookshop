@@ -1,4 +1,4 @@
-// ignore_for_file: prefer_const_constructors, avoid_unnecessary_containers, dead_code
+// ignore_for_file: prefer_const_constructors, avoid_unnecessary_containers
 
 import 'package:bookshop/shaired/colors.dart';
 import 'package:flutter/material.dart';
@@ -11,39 +11,30 @@ class Home extends StatelessWidget {
     return Scaffold(
       drawer: Drawer(
  child: Column(
-  children: [
- mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
  
-  
- Column(
- children: [
+              children: [
+              Column(
+                children: [
  UserAccountsDrawerHeader(
-   ListTile(
-   title: Text("Home"),
-   leading: Icon(Icons.home),
-   onTap: () { }
- ),
- decoration: BoxDecoration(
+   decoration: BoxDecoration(
  image: DecorationImage(
  image: AssetImage("assets\image\profile.JPG"),
  fit: BoxFit.cover),
  ),
- accountName: Text("youssef magdy",
- style: TextStyle(
- color: Color.fromARGB(235, 12, 0, 0),
- )),
- accountEmail: Text("joe@gmail.com"),
- currentAccountPictureSize: Size.square(99),
  currentAccountPicture: CircleAvatar(
  radius: 55,
  backgroundImage: AssetImage("assets\image\back.jpg")),
- ),
-  
  
-  ],
-   ),
- ),
-     ListTile(
+  accountEmail: Text("joe@gmail.com"),
+  accountName: Text("youssef magdy",
+ style: TextStyle(
+ color: Color.fromARGB(235, 12, 0, 0),
+ )),
+              ),
+
+  
+   ListTile(
    title: Text("Home"),
    leading: Icon(Icons.home),
    onTap: () { }
@@ -54,37 +45,32 @@ class Home extends StatelessWidget {
    leading: Icon(Icons.add_shopping_cart),
    onTap: () { }
  ),
- 
+
  ListTile(
    title: Text("About"),
    leading: Icon(Icons.help_center),
    onTap: () { }
  ),
+
  ListTile(
    title: Text("Logout"),
    leading: Icon(Icons.exit_to_app),
-   onTap: () { }
- ),
- Container(
-   margin: EdgeInsets.only(bottom: 12),
-   child: Text("Developed by Ali Hassan © 2022",
- style: TextStyle(fontSize: 16)),
- )
-   ],
-   ),
- ),
+   onTap: () { }),
+ 
   
  ],
  ),
-  
-  
-
-  
+  Container(
+                margin: EdgeInsets.only(bottom: 12),
+                child: Text("Developed by youusef magdy © 2022",
+                    style: TextStyle(fontSize: 16)),
+  )
  ],
+      ),
  ),
 
           
-        ),
+     
       
       appBar: AppBar(
         // ignore: prefer_const_literals_to_create_immutables
@@ -121,6 +107,6 @@ class Home extends StatelessWidget {
         backgroundColor: appbarbrown,
 
         title: Text("Home"),
-      ),
+      ));
   }
-}}
+}
