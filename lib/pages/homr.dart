@@ -22,6 +22,7 @@ class Home extends StatelessWidget {
               itemCount: 16,
               itemBuilder: (BuildContext context, int index) {
                 return GestureDetector(
+                  onTap: (){},
                   child: GridTile(
                     child: Stack(children: [
                       Positioned(
@@ -35,6 +36,24 @@ class Home extends StatelessWidget {
                             child: Image.asset("assets/image/mecha.jpg")),
                       ),
                     ]),
+                  
+                  
+                  footer: GridTileBar(
+// backgroundColor: Color.fromARGB(66, 73, 127, 110),
+    trailing: IconButton(
+      color: Color.fromARGB(255, 62, 94, 70),
+      onPressed: () { },
+      icon: Icon(Icons.add)),
+
+ leading: Text("\$12.99"),
+
+ title: Text("",),
+   ),
+                  
+                  
+                  
+                  
+                  
                   ),
                 );
               }),
