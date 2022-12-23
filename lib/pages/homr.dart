@@ -152,9 +152,9 @@ class Home extends StatelessWidget {
 
           backgroundColor: appbarbrown,
 
-          title: Consumer<Cart>(builder: ((context, testt, child) {
-            title: Text("Home"),
-          })),
-        ));
+          
+            title: Text("Home")
+          ));
+        
   }
 }
