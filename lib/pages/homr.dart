@@ -1,5 +1,6 @@
-// ignore_for_file: prefer_const_constructors, avoid_unnecessary_containers
+// ignore_for_file: prefer_const_constructors, avoid_unnecessary_containers, sort_child_properties_last
 
+import 'package:bookshop/pages/details.dart';
 import 'package:bookshop/shaired/colors.dart';
 import 'package:flutter/material.dart';
 import 'package:bookshop/model/item.dart';
@@ -11,7 +12,7 @@ class Home extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
         body: Padding(
-          padding: const EdgeInsets.only(top: 9),
+          padding: const EdgeInsets.only(top: 22),
           child: GridView.builder(
               gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
                   crossAxisCount: 2,
@@ -21,7 +22,13 @@ class Home extends StatelessWidget {
               itemCount: items.length,
               itemBuilder: (BuildContext context, int index) {
                 return GestureDetector(
-                  onTap: () {},
+                  onTap: () {
+                            Navigator.push(
+          context,
+          MaterialPageRoute(
+            builder: (context) => Detalis(ffffffff),
+          ),
+                  },
                   child: GridTile(
                     // ignore: sort_child_properties_last
                     child: Stack(children: [
@@ -51,7 +58,17 @@ class Home extends StatelessWidget {
                   ),
                 );
               }),
+       
+       
+       
+       
+       
+       
+       
         ),
+
+
+        
         drawer: Drawer(
           child: Column(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
