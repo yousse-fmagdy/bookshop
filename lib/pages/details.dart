@@ -54,11 +54,27 @@ class Detalis extends StatelessWidget {
           Row(
             children: [
               Container(
-                child: Text("new"),
+                Icons
+                padding: EdgeInsets.all(4),
+                child: Text("new",style: TextStyle(fontSize: 15),),
                 decoration: BoxDecoration(
-                  color: 
+                  color: Color.fromARGB(230, 77, 207, 45),
+
+                borderRadius: BorderRadius.circular(6),
                 ),
               )
+            
+           Row(
+             children: [
+               Icon(
+                Icons.start,
+                size: 25,
+                color:Color.fromARGB(146, 204, 192, 18),
+                ),
+             ],
+           )
+           
+           
             ],
           ),
           Text(
