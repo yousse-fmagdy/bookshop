@@ -97,10 +97,7 @@ class Detalis extends StatelessWidget {
            
             ],
           ),
-          Text(
-            "LE 90",
-            style: TextStyle(fontSize: 25),
-          ),
+          
           Row(
             children: [
               Icon(
@@ -110,7 +107,7 @@ class Detalis extends StatelessWidget {
                         // color: Color.fromARGB(255, 186, 30, 30),
                       ),
                           SizedBox(
-                        width: ,
+                        width:5 ,
                       ),
                       Text(
                         "book Shop",
