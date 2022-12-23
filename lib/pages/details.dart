@@ -128,14 +128,14 @@ class _DetalisState extends State<Detalis> {
                   Icon(
                     Icons.edit_location,
                     size: 26,
-                    color: Color.fromARGB(168, 3, 65, 27),
+                    color: Color.fromARGB(168, 46, 53, 4),
                     // color: Color.fromARGB(255, 186, 30, 30),
                   ),
                   SizedBox(
                     width: 5,
                   ),
                   Text(
-                    "book Shop",
+                    widget.product.Location,
                     style: TextStyle(fontSize: 19),
                   ),
                 ],
