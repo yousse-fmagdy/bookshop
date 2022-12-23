@@ -167,7 +167,8 @@ class _DetalisState extends State<Detalis> {
                     });
                   },
                   child: Text(
-                    "show more ",
+
+                   show_more ? "show more ":"showless",
                     style: TextStyle(fontSize: 18),
                   ))
             ],
