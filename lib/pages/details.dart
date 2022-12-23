@@ -152,7 +152,7 @@ class Detalis extends StatelessWidget {
                 "#1 NEW YORK TIMES BESTSELLER - NOW A MAJOR MOTION PICTURE ON NETFLIX - A remarkable tale of the island of Guernsey during the German Occupation, and of a society as extraordinary as its name.",
                 style: TextStyle(fontSize: 18),
                 maxLines: 3,
-                
+                overflow: TextOverflow.fade,
               )
             ],
           ),
