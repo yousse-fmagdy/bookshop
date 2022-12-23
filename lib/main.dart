@@ -17,8 +17,11 @@ class MyApp extends StatelessWidget {
  
   @override
   Widget build(BuildContext context) {
-    return  MaterialApp(
-      home: Home(),
+    return  ChangeNotifierProvider(
+        create: (context) {return ClassName();},
+      child: MaterialApp(
+        home: Home(),
+      ),
     );
   }
 }
