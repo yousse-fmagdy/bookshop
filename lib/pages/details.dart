@@ -162,7 +162,8 @@ class _DetalisState extends State<Detalis> {
               ),
               TextButton(
                   onPressed: () {
-                 
+                    setState(() {
+                      show_more = false;
                     });
                   },
                   child: Text(
