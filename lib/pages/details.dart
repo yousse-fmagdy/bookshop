@@ -71,6 +71,26 @@ class Detalis extends StatelessWidget {
                 size: 25,
                 color:Color.fromARGB(146, 204, 192, 18),
                 ),
+                  Icon(
+                Icons.start,
+                size: 25,
+                color:Color.fromARGB(146, 204, 192, 18),
+                ),
+                  Icon(
+                Icons.start,
+                size: 25,
+                color:Color.fromARGB(146, 204, 192, 18),
+                ),
+                  Icon(
+                Icons.start,
+                size: 25,
+                color:Color.fromARGB(146, 204, 192, 18),
+                ),
+                  Icon(
+                Icons.start,
+                size: 25,
+                color:Color.fromARGB(146, 204, 192, 18),
+                ),
              ],
            )
            
