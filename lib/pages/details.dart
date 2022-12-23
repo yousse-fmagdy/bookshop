@@ -63,7 +63,7 @@ class _DetalisState extends State<Detalis> {
                 height: 11,
               ),
               Text(
-                "LE 90",
+                "${widget.product.price}",
                 style: TextStyle(fontSize: 25),
               ),
               SizedBox(
