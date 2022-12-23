@@ -1,10 +1,16 @@
-// ignore_for_file: prefer_const_constructors, sort_child_properties_last, prefer_const_literals_to_create_immutables
+// ignore_for_file: prefer_const_constructors, sort_child_properties_last, prefer_const_literals_to_create_immutables, non_constant_identifier_names
 
 import 'package:bookshop/shaired/colors.dart';
 import 'package:flutter/material.dart';
 
-class Detalis extends StatelessWidget {
-  const Detalis({super.key});
+class Detalis extends StatefulWidget {
+  @override
+  State<Detalis> createState() => _DetalisState();
+}
+
+class _DetalisState extends State<Detalis> {
+  // const Detalis({super.key});
+  bool show_more = true;
 
   @override
   Widget build(BuildContext context) {
@@ -151,9 +157,18 @@ class Detalis extends StatelessWidget {
               Text(
                 "#1 NEW YORK TIMES BESTSELLER - NOW A MAJOR MOTION PICTURE ON NETFLIX - A remarkable tale of the island of Guernsey during the German Occupation, and of a society as extraordinary as its name.",
                 style: TextStyle(fontSize: 18),
-                maxLines: 3,
+                maxLines: show_more ? 3 : null,
                 overflow: TextOverflow.fade,
-              )
+              ),
+              TextButton(
+                  onPressed: () {
+                 
+                    });
+                  },
+                  child: Text(
+                    "show more ",
+                    style: TextStyle(fontSize: 18),
+                  ))
             ],
           ),
         ));
