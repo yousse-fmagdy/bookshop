@@ -45,119 +45,125 @@ class Detalis extends StatelessWidget {
 
         title: Text("Details screen"),
       ),
-      body: Column(
-        children: [
-          Image.asset("assets/image/2.jpg"),
-          SizedBox(
-            height: 11,
+      body: SingleChildScrollView(
+        child: Column(
+          children: [
+            Image.asset("assets/image/2.jpg"),
+            SizedBox(
+              height: 11,
+            ),
+            Text(
+              "LE 90",
+              style: TextStyle(fontSize: 25),
+            ),
+            SizedBox(
+                  height: 16,
+                ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceAround,
+              children: [
+                Container(
+                  
+                  padding: EdgeInsets.all(4),
+                  child: Text("new",style: TextStyle(fontSize: 15),),
+                  decoration: BoxDecoration(
+                    color: Color.fromARGB(230, 77, 207, 45),
+      
+                  borderRadius: BorderRadius.circular(6),
+                  ),
+                ),
+                         SizedBox(
+                      width: 10,
+                    ),
+             Row(
+               children: [
+                 Icon(
+                  Icons.start,
+                  size: 25,
+                  color:Color.fromARGB(146, 204, 192, 18),
+                  ),
+                    Icon(
+                  Icons.start,
+                  size: 25,
+                  color:Color.fromARGB(146, 204, 192, 18),
+                  ),
+                    Icon(
+                  Icons.start,
+                  size: 25,
+                  color:Color.fromARGB(146, 204, 192, 18),
+                  ),
+                    Icon(
+                  Icons.start,
+                  size: 25,
+                  color:Color.fromARGB(146, 204, 192, 18),
+                  ),
+                    Icon(
+                  Icons.start,
+                  size: 25,
+                  color:Color.fromARGB(146, 204, 192, 18),
+                  ),
+               ],
+             ),
+             SizedBox(
+                      width: 50,
+                    ),
+             
+              ],
+            ),
+            SizedBox(
+                      width: 8,
+                    ),
+            Row(
+              children: [
+                Icon(
+                          Icons.edit_location,
+                          size: 26,
+                          color: Color.fromARGB(168, 3, 65, 27),
+                          // color: Color.fromARGB(255, 186, 30, 30),
+                        ),
+                            SizedBox(
+                          width:5 ,
+                        ),
+                        Text(
+                          "book Shop",
+                          style: TextStyle(fontSize: 19),
+                        ),
+                        
+              ],
+            ),
+         
+                    SizedBox(
+                      height: 16,
+                    ),
+      
+      
+      SizedBox(
+        width:double.infinity ,
+        child:   Text(
+        
+          "Details"
+        
+          style: TextStyle(fontSize: 22),
+        
+        
+        
+        textAlign:TextAlign.start ,
+        
+        
+        
           ),
-          Text(
-            "LE 90",
-            style: TextStyle(fontSize: 25),
-          ),
-          SizedBox(
-                height: 16,
-              ),
-          Row(
-            mainAxisAlignment: MainAxisAlignment.spaceAround,
-            children: [
-              Container(
-                
-                padding: EdgeInsets.all(4),
-                child: Text("new",style: TextStyle(fontSize: 15),),
-                decoration: BoxDecoration(
-                  color: Color.fromARGB(230, 77, 207, 45),
-
-                borderRadius: BorderRadius.circular(6),
-                ),
-              ),
-                       SizedBox(
-                    width: 10,
-                  ),
-           Row(
-             children: [
-               Icon(
-                Icons.start,
-                size: 25,
-                color:Color.fromARGB(146, 204, 192, 18),
-                ),
-                  Icon(
-                Icons.start,
-                size: 25,
-                color:Color.fromARGB(146, 204, 192, 18),
-                ),
-                  Icon(
-                Icons.start,
-                size: 25,
-                color:Color.fromARGB(146, 204, 192, 18),
-                ),
-                  Icon(
-                Icons.start,
-                size: 25,
-                color:Color.fromARGB(146, 204, 192, 18),
-                ),
-                  Icon(
-                Icons.start,
-                size: 25,
-                color:Color.fromARGB(146, 204, 192, 18),
-                ),
-             ],
-           ),
-           SizedBox(
-                    width: 50,
-                  ),
-           
-            ],
-          ),
-          SizedBox(
-                    width: 8,
-                  ),
-          Row(
-            children: [
-              Icon(
-                        Icons.edit_location,
-                        size: 26,
-                        color: Color.fromARGB(168, 3, 65, 27),
-                        // color: Color.fromARGB(255, 186, 30, 30),
-                      ),
-                          SizedBox(
-                        width:5 ,
-                      ),
-                      Text(
-                        "book Shop",
-                        style: TextStyle(fontSize: 19),
-                      ),
-                      
-            ],
-          ),
-       
-                  SizedBox(
-                    height: 16,
-                  ),
-
-
-SizedBox(
-  width:double.infinity ,
-  child:   Text(
-  
-    "Details"
-  
-    style: TextStyle(fontSize: 22),
-  
-  
-  
-  textAlign:TextAlign.start ,
-  
-  
-  
-    ),
-),
-           SizedBox(
-                    height: 16,
-                  ),
-
-        ],
-
+      ),
+             SizedBox(
+                      height: 16,
+                    ),
+      
+      
+      Text("#1 NEW YORK TIMES BESTSELLER - NOW A MAJOR MOTION PICTURE ON NETFLIX - A remarkable tale of the island of Guernsey during the German Occupation, and of a society as extraordinary as its name.")
+      
+      
+          ],
+      
+        ),
       ));
   }
 }
