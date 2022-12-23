@@ -1,5 +1,7 @@
 // ignore_for_file: prefer_const_constructors, avoid_unnecessary_containers
 
+import 'dart:ui';
+
 import 'package:bookshop/shaired/colors.dart';
 import 'package:flutter/material.dart';
 
@@ -17,24 +19,19 @@ class Home extends StatelessWidget {
                 mainAxisSpacing: 33),
             itemCount: 16,
             itemBuilder: (BuildContext context, int index) {
-              return Container(
-                children: Stack(
-                  child: Positioned(
-                    right: 0,
+              return GridTile(
+                child: Stack(children: [
+                  Positioned(
+                    right: 44,
                     left: 0,
-                    
+
                     child: ClipRRect(
-                                borderRadius: BorderRadius.circular(55),
-                                 child:Image.asset("assets/image/mecha.jpg") ,
-                    ),
+                        borderRadius: BorderRadius.circular(55),
+                        child: Image.asset("assets/image/mecha.jpg")),
                   ),
-                ),
-                
+                ]),
               );
             }),
-
-
-
         drawer: Drawer(
           child: Column(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
