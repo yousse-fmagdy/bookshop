@@ -51,6 +51,13 @@ class Detalis extends StatelessWidget {
           SizedBox(
             height: 11,
           ),
+          Text(
+            "LE 90",
+            style: TextStyle(fontSize: 25),
+          ),
+          SizedBox(
+                height: 16,
+              ),
           Row(
             children: [
               Container(
