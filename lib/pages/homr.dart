@@ -27,7 +27,7 @@ class Home extends StatelessWidget {
                             Navigator.push(
           context,
           MaterialPageRoute(
-            builder: (context) => Detalis(product:   items[0]),
+            builder: (context) => Detalis(product:   items[index]),
           ),);
                   },
                   child: GridTile(
