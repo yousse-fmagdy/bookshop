@@ -12,7 +12,7 @@ class Home extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
         body: Padding(
-          padding: const EdgeInsets.only(top :9),
+          padding: const EdgeInsets.only(top: 9),
           child: GridView.builder(
               gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
                   crossAxisCount: 2,
@@ -22,38 +22,30 @@ class Home extends StatelessWidget {
               itemCount: 16,
               itemBuilder: (BuildContext context, int index) {
                 return GestureDetector(
-                  onTap: (){},
+                  onTap: () {},
                   child: GridTile(
                     child: Stack(children: [
                       Positioned(
-                      top: -3,
-                          bottom: -9,
-                          right: 0,
-                          left: 0,
-                
+                        top: -3,
+                        bottom: -9,
+                        right: 0,
+                        left: 0,
                         child: ClipRRect(
                             borderRadius: BorderRadius.circular(55),
                             child: Image.asset("assets/image/mecha.jpg")),
-                      ),
-                    ]),
-                  
-                  
-                  footer: GridTileBar(
+                    footer: GridTileBar(
 // backgroundColor: Color.fromARGB(66, 73, 127, 110),
-    trailing: IconButton(
-      color: Color.fromARGB(255, 62, 94, 70),
-      onPressed: () { },
-      icon: Icon(Icons.add)),
+                      trailing: IconButton(
+                          color: Color.fromARGB(255, 141, 122, 16),
+                          onPressed: () {},
+                          icon: Icon(Icons.add)),
 
- leading: Text("\$12.99"),
+                      leading: Text("\$12.99"),
 
- title: Text("",),
-   ),
-                  
-                  
-                  
-                  
-                  
+                      title: Text(
+              "",
+                      ),
+                    ),
                   ),
                 );
               }),
