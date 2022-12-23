@@ -1,9 +1,11 @@
-// ignore_for_file: prefer_const_constructors, avoid_unnecessary_containers
+// ignore_for_file: prefer_const_constructors, avoid_unnecessary_containers, sort_child_properties_last
 
 import 'package:bookshop/pages/details.dart';
+import 'package:bookshop/provider/cart.dart';
 import 'package:bookshop/shaired/colors.dart';
 import 'package:flutter/material.dart';
 import 'package:bookshop/model/item.dart';
+import 'package:provider/provider.dart';
 
 class Home extends StatelessWidget {
   const Home({super.key});
@@ -142,7 +144,10 @@ class Home extends StatelessWidget {
 
           backgroundColor: appbarbrown,
 
-          title: Text("Home"),
+          title: Consumer<Cart>(
+              builder: ((context, testt, child) {
+  return Text("${}");
+})),
         ));
   }
 }
