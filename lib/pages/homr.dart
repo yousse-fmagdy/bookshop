@@ -14,7 +14,9 @@ class Item {
 
 class Home extends StatelessWidget {
   List items = [
-    Item(imgPath: "assets\image\1.jpg", price: 80.99),
+    Item(imgPath: "assets/image/1.jpg", price: 80.99),
+        Item(imgPath: "assets/image/2.jpg", price: 55.32),
+
 
   ];
 
