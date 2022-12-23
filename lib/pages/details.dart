@@ -109,6 +109,13 @@ class Detalis extends StatelessWidget {
                         color: Color.fromARGB(168, 3, 65, 27),
                         // color: Color.fromARGB(255, 186, 30, 30),
                       ),
+                          SizedBox(
+                        width: ,
+                      ),
+                      Text(
+                        "book Shop",
+                        style: TextStyle(fontSize: 19),
+                      ),
                       
             ],
           )
