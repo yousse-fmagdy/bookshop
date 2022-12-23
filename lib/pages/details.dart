@@ -1,4 +1,4 @@
-// ignore_for_file: prefer_const_constructors, sort_child_properties_last
+// ignore_for_file: prefer_const_constructors, sort_child_properties_last, prefer_const_literals_to_create_immutables
 
 import 'package:bookshop/shaired/colors.dart';
 import 'package:flutter/material.dart';
@@ -101,6 +101,17 @@ class Detalis extends StatelessWidget {
             "LE 90",
             style: TextStyle(fontSize: 25),
           ),
+          Row(
+            children: [
+              Icon(
+                        Icons.edit_location,
+                        size: 26,
+                        color: Color.fromARGB(168, 3, 65, 27),
+                        // color: Color.fromARGB(255, 186, 30, 30),
+                      ),
+                      
+            ],
+          )
         ],
       ),
     );
