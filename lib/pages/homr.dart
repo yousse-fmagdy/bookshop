@@ -23,7 +23,9 @@ class Home extends StatelessWidget {
     Item(imgPath: "assets/image/8.jpg", price: 57),
     Item(imgPath: "assets/image/9.jpg", price: 66),
     Item(imgPath: "assets/image/10.jpg", price: 90),
-    
+    Item(imgPath: "assets/image/11.jpg", price: 60),
+
+
 
 
 
