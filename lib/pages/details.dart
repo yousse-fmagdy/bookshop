@@ -59,9 +59,10 @@ class Detalis extends StatelessWidget {
                 height: 16,
               ),
           Row(
+            mainAxisAlignment: MainAxisAlignment.spaceAround,
             children: [
               Container(
-                Icons
+                
                 padding: EdgeInsets.all(4),
                 child: Text("new",style: TextStyle(fontSize: 15),),
                 decoration: BoxDecoration(
@@ -69,8 +70,10 @@ class Detalis extends StatelessWidget {
 
                 borderRadius: BorderRadius.circular(6),
                 ),
-              )
-            
+              ),
+                       SizedBox(
+                    width: 10,
+                  ),
            Row(
              children: [
                Icon(
@@ -99,12 +102,16 @@ class Detalis extends StatelessWidget {
                 color:Color.fromARGB(146, 204, 192, 18),
                 ),
              ],
-           )
-           
+           ),
+           SizedBox(
+                    width: 50,
+                  ),
            
             ],
           ),
-          
+          SizedBox(
+                    width: 8,
+                  ),
           Row(
             children: [
               Icon(
@@ -122,9 +129,35 @@ class Detalis extends StatelessWidget {
                       ),
                       
             ],
-          )
+          ),
+       
+                  SizedBox(
+                    height: 16,
+                  ),
+
+
+SizedBox(
+  width:double.infinity ,
+  child:   Text(
+  
+    "Details"
+  
+    style: TextStyle(fontSize: 22),
+  
+  
+  
+  textAlign:TextAlign.start ,
+  
+  
+  
+    ),
+),
+           SizedBox(
+                    height: 16,
+                  ),
+
         ],
-      ),
-    );
+
+      ));
   }
 }
