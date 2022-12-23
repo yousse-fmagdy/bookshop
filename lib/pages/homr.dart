@@ -1,4 +1,4 @@
-// ignore_for_file: prefer_const_constructors, avoid_unnecessary_containers, sort_child_properties_last
+// ignore_for_file: prefer_const_constructors, avoid_unnecessary_containers
 
 import 'package:bookshop/pages/details.dart';
 import 'package:bookshop/shaired/colors.dart';
@@ -23,11 +23,12 @@ class Home extends StatelessWidget {
               itemBuilder: (BuildContext context, int index) {
                 return GestureDetector(
                   onTap: () {
+
                             Navigator.push(
           context,
           MaterialPageRoute(
-            builder: (context) => Detalis(ffffffff),
-          ),
+            builder: (context) => Detalis(product:   items[0]),
+          ),);
                   },
                   child: GridTile(
                     // ignore: sort_child_properties_last
@@ -58,17 +59,7 @@ class Home extends StatelessWidget {
                   ),
                 );
               }),
-       
-       
-       
-       
-       
-       
-       
         ),
-
-
-        
         drawer: Drawer(
           child: Column(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
