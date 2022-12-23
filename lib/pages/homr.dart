@@ -1,16 +1,11 @@
 // ignore_for_file: prefer_const_constructors, avoid_unnecessary_containers
 
-import 'dart:ffi';
-
 import 'package:bookshop/shaired/colors.dart';
 import 'package:flutter/material.dart';
-
-
+import 'package:bookshop/model/item.dart';
 
 class Home extends StatelessWidget {
-
-
-  Home({super.key});
+  const Home({super.key});
 
   @override
   Widget build(BuildContext context) {
