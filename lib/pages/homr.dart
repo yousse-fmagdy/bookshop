@@ -7,24 +7,20 @@ import 'package:flutter/material.dart';
 
 class Item {
   String imgPath;
-  Int price ;
+  Int price;
   Item({required this.imgPath, required this.price});
 }
 
 class Home extends StatelessWidget {
   final List<Item> items = [
-    Item(imgPath: "assets/image/1.jpg", price : 80),
+    Item(imgPath: "assets/image/1.jpg", price: 80),
     Item(imgPath: "assets/image/2.jpg", price: 55),
     Item(imgPath: "assets/image/3.jpg", price: 60),
     Item(imgPath: "assets/image/4.jpg", price: 45),
-        Item(imgPath: "assets/image/5.jpg", price: 63),
-                Item(imgPath: "assets/image/6.jpg", price: 52),
-                Item(imgPath: "assets/image/7.jpg", price: 40),
-
-
-
-
-
+    Item(imgPath: "assets/image/5.jpg", price: 63),
+    Item(imgPath: "assets/image/6.jpg", price: 52),
+    Item(imgPath: "assets/image/7.jpg", price: 40),
+    Item(imgPath: "assets/image/8.jpg", price: 57),
   ];
 
   Home({super.key});
