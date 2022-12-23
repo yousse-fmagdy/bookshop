@@ -1,3 +1,6 @@
+// ignore_for_file: unused_import
+
+import 'package:bookshop/pages/details.dart';
 import 'package:bookshop/pages/resister.dart';
 import 'package:flutter/material.dart';
 
@@ -12,7 +15,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const MaterialApp(
-      home: Register(),
+      home: Detalis(),
     );
   }
 }
