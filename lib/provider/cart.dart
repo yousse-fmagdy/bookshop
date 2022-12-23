@@ -9,6 +9,7 @@ class Cart with ChangeNotifier {
   add(Item product) {
     selectedproducts.add(product);
     double Price = 0;
+    Price += product.price ;
     notifyListeners();
   }
 }

@@ -124,7 +124,7 @@ class Home extends StatelessWidget {
                     children: [
                       Container(
                           child: Text(
-                            "${classInstancee.Price} ",
+                            "${classInstancee.selectedproducts.length} ",
                             style: TextStyle(
                                 fontSize: 16,
                                 color: Color.fromARGB(255, 0, 0, 0)),
@@ -153,7 +153,7 @@ class Home extends StatelessWidget {
           backgroundColor: appbarbrown,
 
           title: Consumer<Cart>(builder: ((context, testt, child) {
-            return Text("Home");
+            title: Text("Home"),
           })),
         ));
   }
