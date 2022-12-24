@@ -1,4 +1,4 @@
-// ignore_for_file: prefer_const_constructors, sort_child_properties_last, prefer_const_literals_to_create_immutables, non_constant_identifier_names, use_key_in_widget_constructors
+// ignore_for_file: prefer_const_constructors, sort_child_properties_last, prefer_const_literals_to_create_immutables, non_constant_identifier_names, use_key_in_widget_constructors, must_be_immutable, duplicate_ignore
 
 import 'package:bookshop/model/item.dart';
 import 'package:bookshop/shaired/colors.dart';
@@ -21,34 +21,8 @@ class _DetalisState extends State<Detalis> {
         appBar: AppBar(
           // ignore: prefer_const_literals_to_create_immutables
           actions: [
-            Row(
-              children: [
-                Stack(
-                  children: [
-                    Container(
-                        child: Text(
-                          "8",
-                          style: TextStyle(
-                              fontSize: 16,
-                              color: Color.fromARGB(255, 0, 0, 0)),
-                        ),
-                        padding: EdgeInsets.all(5),
-                        decoration: BoxDecoration(
-                            color: Color.fromARGB(211, 164, 255, 193),
-                            shape: BoxShape.circle)),
-                    IconButton(
-                        onPressed: () {}, icon: Icon(Icons.add_shopping_cart)),
-                  ],
-                ),
-                Padding(
-                  padding: const EdgeInsets.only(right: 15),
-                  child: Text(
-                    "\$ 128",
-                    style: TextStyle(fontSize: 16),
-                  ),
-                ),
-              ],
-            ),
+           //here
+            ProductsAndPrice()
           ],
 
           backgroundColor: appbarbrown,
@@ -121,8 +95,9 @@ class _DetalisState extends State<Detalis> {
                 ],
               ),
               SizedBox(
-                width: 8,
+                width: 5,
               ),
+              //here 
               Row(
                 children: [
                   Icon(
@@ -151,11 +126,9 @@ class _DetalisState extends State<Detalis> {
                   textAlign: TextAlign.start,
                 ),
               ),
+              
               SizedBox(
-                height: 17,
-              ),
-              SizedBox(
-                height: 16,
+                height: 18,
               ),
               Text(
                 "#1 NEW YORK TIMES BESTSELLER - NOW A MAJOR MOTION PICTURE ON NETFLIX - A remarkable tale of the island of Guernsey during the German Occupation, and of a society as extraordinary as its name.",
