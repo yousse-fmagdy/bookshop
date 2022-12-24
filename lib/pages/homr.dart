@@ -1,5 +1,6 @@
 // ignore_for_file: prefer_const_constructors, avoid_unnecessary_containers, sort_child_properties_last, duplicate_ignore
 
+import 'package:bookshop/pages/checkout.dart';
 import 'package:bookshop/pages/details.dart';
 import 'package:bookshop/provider/cart.dart';
 import 'package:bookshop/shaired/colors.dart';
@@ -12,7 +13,7 @@ class Home extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-     final Cartt = Provider.of<Cart>(context);
+    final Cartt = Provider.of<Cart>(context);
     return Scaffold(
         body: Padding(
           padding: const EdgeInsets.only(top: 22),
@@ -48,20 +49,17 @@ class Home extends StatelessWidget {
                     ]),
                     footer: GridTileBar(
 // backgroundColor: Color.fromARGB(66, 73, 127, 110),
-                      trailing:
-                        
-                         IconButton(
-                            color: Color.fromARGB(255, 141, 122, 16),
-                            onPressed: () {
-                              Cartt.add(items[index]);
-                            },
-                            icon: Icon(Icons.add)),
-                 
+                      trailing: IconButton(
+                          color: Color.fromARGB(255, 141, 122, 16),
+                          onPressed: () {
+                            Cartt.add(items[index]);
+                          },
+                          icon: Icon(Icons.add)),
 
                       leading: Text("\$12.99"),
 
                       title: Text(
-                                   "",
+                        "",
                       ),
                     ),
                   ),
@@ -92,11 +90,25 @@ class Home extends StatelessWidget {
                   ListTile(
                       title: Text("Home"),
                       leading: Icon(Icons.home),
-                      onTap: () {}),
+                      onTap: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => Home(),
+                          ),
+                        );
+                      }),
                   ListTile(
                       title: Text("My products"),
                       leading: Icon(Icons.add_shopping_cart),
-                      onTap: () {}),
+                      onTap: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => CheckOut(),
+                          ),
+                        );
+                      }),
                   ListTile(
                       title: Text("About"),
                       leading: Icon(Icons.help_center),
@@ -117,15 +129,14 @@ class Home extends StatelessWidget {
         ),
         appBar: AppBar(
           // ignore: prefer_const_literals_to_create_immutables
-         actions: [
-       
-                Row(
-                children: [
-                  Stack(
-                    children: [
-                      Positioned(
-                        bottom: 24,
-                        child:Container(
+          actions: [
+            Row(
+              children: [
+                Stack(
+                  children: [
+                    Positioned(
+                      bottom: 24,
+                      child: Container(
                           child: Text(
                             "${Cartt.selectedproducts.length} ",
                             style: TextStyle(
@@ -136,30 +147,27 @@ class Home extends StatelessWidget {
                           decoration: BoxDecoration(
                               color: Color.fromARGB(211, 164, 255, 193),
                               shape: BoxShape.circle)),
-                       ),
-                      IconButton(
-                        onPressed: () {},
-                        icon: Icon(Icons.add_shopping_cart),
-                      ),
-                    ],
-                  ),
-                  Padding(
-                    padding: const EdgeInsets.only(right: 15),
-                    child: Text(
-                      "\$ 128",
-                      style: TextStyle(fontSize: 16),
                     ),
+                    IconButton(
+                      onPressed: () {},
+                      icon: Icon(Icons.add_shopping_cart),
+                    ),
+                  ],
+                ),
+                Padding(
+                  padding: const EdgeInsets.only(right: 15),
+                  child: Text(
+                    "\$ 128",
+                    style: TextStyle(fontSize: 16),
                   ),
-                ],
-              ),
-            
-                     ],
+                ),
+              ],
+            ),
+          ],
 
           backgroundColor: appbarbrown,
 
-          
-            title: Text("Home"),
-          ));
-        
+          title: Text("Home"),
+        ));
   }
 }
