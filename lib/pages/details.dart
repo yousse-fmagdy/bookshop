@@ -171,7 +171,7 @@ class _DetalisState extends State<Detalis> {
                   },
                   child: Text(
                     show_more ? "show more " : "showless",
-                    style: TextStyle(fontSize: 18),
+                    style: TextStyle(fontSize: 20),
                   ))
             ],
           ),
