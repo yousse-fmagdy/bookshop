@@ -1,43 +1,40 @@
 
 
 
-// ignore_for_file: implementation_imports
+// ignore_for_file: prefer_const_constructors
 
-import 'package:flutter/src/widgets/container.dart';
-import 'package:flutter/src/widgets/framework.dart';
+import 'package:bookshop/provider/cart.dart';
+import 'package:flower_app/pages/checkout.dart';
+import 'package:flower_app/provider/cart.dart';
+import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
 
-class product_ extends StatelessWidget {
-  const product_({super.key});
+class ProductsAndPrice extends StatelessWidget {
+  const ProductsAndPrice({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    return  Row(
-              children: [
-                Stack(
-                  children: [
-                    Container(
-                        child: Text(
-                          "8",
-                          style: TextStyle(
-                              fontSize: 16,
-                              color: Color.fromARGB(255, 0, 0, 0)),
-                        ),
-                        padding: EdgeInsets.all(5),
-                        decoration: BoxDecoration(
-                            color: Color.fromARGB(211, 164, 255, 193),
-                            shape: BoxShape.circle)),
-                    IconButton(
-                        onPressed: () {}, icon: Icon(Icons.add_shopping_cart)),
-                  ],
-                ),
-                Padding(
-                  padding: const EdgeInsets.only(right: 15),
+    final Carttt = Provider.of<Cart>(context);
+    return Row(
+      children: [
+        Stack(
+          children: [
+            Positioned(
+              bottom: 24,
+              child: Container(
+                  // ignore: sort_child_properties_last
                   child: Text(
-                    "\$ 128",
-                    style: TextStyle(fontSize: 16),
+                    "${Carttt.selectedproducts.length}",
+                    style: TextStyle(
+                        fontSize: 16, color: Color.fromARGB(255, 0, 0, 0)),
                   ),
-                ),
-              ],
-            ),();
+                  padding: EdgeInsets.all(5),
+                  decoration: BoxDecoration(
+                      color: Color.fromARGB(211, 164, 255, 193),
+                      shape: BoxShape.circle)),
+            ),
+            
+      ],
+    );
   }
 }

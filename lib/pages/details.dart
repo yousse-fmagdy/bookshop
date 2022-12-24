@@ -1,8 +1,11 @@
-// ignore_for_file: prefer_const_constructors, sort_child_properties_last, prefer_const_literals_to_create_immutables, non_constant_identifier_names, use_key_in_widget_constructors, must_be_immutable, duplicate_ignore
+// ignore_for_file: prefer_const_constructors, sort_child_properties_last, prefer_const_literals_to_create_immutables, non_constant_identifier_names, use_key_in_widget_constructors, must_be_immutable, duplicate_ignore, unused_local_variable
 
 import 'package:bookshop/model/item.dart';
+import 'package:bookshop/provider/cart.dart';
+import 'package:bookshop/shaired/appbar.dart';
 import 'package:bookshop/shaired/colors.dart';
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
 
 class Detalis extends StatefulWidget {
   Item product;
@@ -17,7 +20,9 @@ class _DetalisState extends State<Detalis> {
 
   @override
   Widget build(BuildContext context) {
+    final Carttt = Provider.of<Cart>(context);
     return Scaffold(
+
         appBar: AppBar(
           // ignore: prefer_const_literals_to_create_immutables
           actions: [
