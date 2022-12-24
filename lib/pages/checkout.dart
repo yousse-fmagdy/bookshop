@@ -27,9 +27,18 @@ class CheckOut extends StatelessWidget {
       body :SizedBox(height: 300,
       child:ListView.builder(
 padding: const EdgeInsets.all(8),
-itemCount: mylist.length,
+itemCount: Carttt.selectedproducts.length,
 itemBuilder: (BuildContext context, int index) {
-return Container( );
+return  Card(
+    child: ListTile(
+        subtitle: Text("TEST"),
+        leading: CircleAvatar(backgroundImage:AssetImage("PATH"),),
+        title: Text("TEST"),
+        trailing: IconButton(
+        onPressed: () { },
+        icon: Icon(Icons.remove)),
+  ),)
+;
 }
 ) ,)
     );

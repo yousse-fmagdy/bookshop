@@ -38,7 +38,7 @@ class ProductsAndPrice extends StatelessWidget {
                 Navigator.push(
                       context,
                       MaterialPageRoute(
-                        builder: (context) => CheckOut(),
+                        builder: (context) => Detalis(product: items[index]),
                       ),
                     );
               },
