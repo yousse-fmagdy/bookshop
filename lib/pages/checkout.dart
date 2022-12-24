@@ -1,3 +1,5 @@
+// ignore_for_file: prefer_const_constructors
+
 import 'dart:html';
 
 import 'package:bookshop/provider/cart.dart';
@@ -18,13 +20,14 @@ class CheckOut extends StatelessWidget {
              AppBar(
               backgroundColor: appbarbrown,
               title:Text("CheckOut"),
+             // ignore: prefer_const_literals_to_create_immutables
              actions: [
               ProductsAndPrice()
              ],
 
              )      ,
 
-      body :SizedBox(height: 300,
+      body :SizedBox(height: 20,
       child:ListView.builder(
 padding: const EdgeInsets.all(8),
 itemCount: Carttt.selectedproducts.length,

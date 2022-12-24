@@ -3,9 +3,8 @@
 
 // ignore_for_file: prefer_const_constructors
 
+import 'package:bookshop/pages/checkout.dart';
 import 'package:bookshop/provider/cart.dart';
-import 'package:flower_app/pages/checkout.dart';
-import 'package:flower_app/provider/cart.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
@@ -38,7 +37,7 @@ class ProductsAndPrice extends StatelessWidget {
                 Navigator.push(
                       context,
                       MaterialPageRoute(
-                        builder: (context) => Detalis(product: items[index]),
+                        builder: (context) => CheckOut(),
                       ),
                     );
               },
