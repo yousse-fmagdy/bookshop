@@ -4,7 +4,7 @@ import 'dart:html';
 
 class Item {
   String imgPath;
-  int price;
+  int price=0;
   String Location;
   String name;
   Item({required this.imgPath,required this.name, required this.price,this.Location="our store"});

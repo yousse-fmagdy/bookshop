@@ -5,14 +5,18 @@ import 'package:flutter/material.dart';
 
 class Cart with ChangeNotifier {
   List selectedproducts = [];
-
+  int price = 0;
   add(Item product) {
     selectedproducts.add(product);
     double Price = 0;
-    Price += product.price;
+     Price+= product.price;
     notifyListeners();
   }
 
-delete(Item product) {
+    delete(Item product) {
     selectedproducts.remove(product);
+      price+= product.price;
+
+    notifyListeners();
+  }
 }

@@ -48,7 +48,7 @@ class ProductsAndPrice extends StatelessWidget {
         Padding(
           padding: const EdgeInsets.only(right: 12),
           child: Text(
-            "\$ ${Carttt.Price}",
+            "\$ ${Carttt.price}",
             style: TextStyle(fontSize: 18),
           ),
         ),
