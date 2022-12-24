@@ -33,7 +33,26 @@ class ProductsAndPrice extends StatelessWidget {
                       color: Color.fromARGB(211, 164, 255, 193),
                       shape: BoxShape.circle)),
             ),
-            
+            IconButton(
+              onPressed: () {
+                Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => CheckOut(),
+                      ),
+                    );
+              },
+              icon: Icon(Icons.add_shopping_cart),
+            ),
+          ],
+        ),
+        Padding(
+          padding: const EdgeInsets.only(right: 12),
+          child: Text(
+            "\$ ${Carttt.price}",
+            style: TextStyle(fontSize: 18),
+          ),
+        ),
       ],
     );
   }

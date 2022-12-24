@@ -1,5 +1,6 @@
 // ignore_for_file: unused_import, prefer_const_constructors
 
+import 'package:bookshop/pages/checkout.dart';
 import 'package:bookshop/pages/details.dart';
 import 'package:bookshop/pages/homr.dart';
 import 'package:bookshop/pages/resister.dart';
@@ -22,7 +23,7 @@ class MyApp extends StatelessWidget {
       create: (context) {return Cart();},
       child: MaterialApp(
         debugShowCheckedModeBanner: false,
-        home: Home(),
+        home: CheckOut(),
       ),
     );
   }
